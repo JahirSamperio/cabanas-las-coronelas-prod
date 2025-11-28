@@ -1,0 +1,123 @@
+.menu-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.menu-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem 1rem;
+  background: linear-gradient(135deg, var(--bg-light) 0%, var(--white) 100%);
+}
+
+.menu-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.menu-card:hover .menu-icon {
+  transform: scale(1.1);
+  color: var(--secondary-color);
+}
+
+.menu-card .card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.menu-items-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.menu-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0 0 0.5rem 0;
+}
+
+.menu-item-description {
+  font-size: 0.9375rem;
+  color: var(--text-light);
+  margin: 0 0 0.75rem 0;
+  line-height: 1.5;
+}
+
+.menu-item-accompaniments {
+  margin-top: 0.75rem;
+}
+
+.accompaniments-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.accompaniments-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.accompaniments-list li {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  background: var(--bg-light);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.menu-item-category {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  background: var(--bg-light);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--border-radius);
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 480px) {
+  .menu-icon {
+    font-size: 2.5rem;
+  }
+  
+  .menu-icon-wrapper {
+    padding: 1.5rem 1rem 0.75rem;
+  }
+  
+  .menu-item-name {
+    font-size: 1rem;
+  }
+  
+  .accompaniments-list {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}

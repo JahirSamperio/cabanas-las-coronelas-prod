@@ -1,0 +1,113 @@
+/* Hero styles inherited from Home.css */
+
+.services-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.service-item:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateX(4px);
+}
+
+.service-check {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: var(--white);
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.service-content {
+  flex: 1;
+}
+
+.service-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.25rem;
+}
+
+.service-notes {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+.additional-service-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.additional-service-card .card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-price {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.price-free {
+  color: var(--primary-color);
+}
+
+.price-amount {
+  color: var(--secondary-color);
+}
+
+.price-consult {
+  color: var(--text-light);
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.cta-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .services-list {
+    gap: 1rem;
+  }
+  
+  .service-item {
+    padding: 1rem;
+  }
+  
+  .service-check {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 1rem;
+  }
+  
+  .service-name {
+    font-size: 1rem;
+  }
+}

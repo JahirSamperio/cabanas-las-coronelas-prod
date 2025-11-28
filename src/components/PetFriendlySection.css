@@ -1,0 +1,249 @@
+.pet-friendly-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pet-friendly-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.pet-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  color: var(--color-white);
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.pet-header-content {
+  flex: 1;
+}
+
+.pet-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.pet-subtitle {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.pet-section-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+/* Costs Section */
+.pet-costs-section {
+  margin-bottom: 2rem;
+}
+
+.pet-costs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.pet-cost-card {
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.pet-cost-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pet-cost-label {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.pet-cost-amount {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Deposit Section */
+.pet-deposit-section {
+  margin-bottom: 2rem;
+}
+
+.pet-deposit-card {
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pet-deposit-amount {
+  margin: 0 0 0.25rem 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-success, #28a745);
+}
+
+.pet-deposit-description {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.pet-deposit-conditions {
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pet-conditions-title {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+.pet-conditions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pet-condition-item {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.pet-condition-item::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-success, #28a745);
+  font-weight: bold;
+}
+
+/* Rules Section */
+.pet-rules-section {
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pet-rules-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pet-rule-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-border, #e0e0e0);
+}
+
+.pet-rule-item:last-child {
+  border-bottom: none;
+}
+
+.pet-rule-bullet {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  line-height: 1.5;
+}
+
+.pet-rule-text {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .pet-friendly-section {
+    padding: 1.5rem;
+  }
+
+  .pet-friendly-header {
+    gap: 1rem;
+  }
+
+  .pet-icon-wrapper {
+    width: 56px;
+    height: 56px;
+    font-size: 1.75rem;
+  }
+
+  .pet-title {
+    font-size: 1.5rem;
+  }
+
+  .pet-subtitle {
+    font-size: 1rem;
+  }
+
+  .pet-costs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pet-deposit-amount {
+    font-size: 2rem;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .pet-cost-card {
+    transition: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .pet-friendly-section {
+    border: 2px solid currentColor;
+  }
+
+  .pet-cost-card,
+  .pet-deposit-card,
+  .pet-deposit-conditions,
+  .pet-rules-section {
+    border: 1px solid currentColor;
+  }
+}

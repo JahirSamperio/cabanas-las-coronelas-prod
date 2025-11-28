@@ -1,0 +1,399 @@
+/* Hero simplificado */
+.policies-hero {
+  background: linear-gradient(135deg, var(--color-primary, #2c5f2d) 0%, #1a3a1b 100%);
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.policies-main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.policies-main-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+/* Check-in / Check-out Section */
+.checkin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.checkin-card {
+  background: var(--color-white);
+  border: 1px solid #e5e7eb;
+}
+
+.checkin-times {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.time-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #f9fafb;
+  border-radius: 4px;
+}
+
+.time-label {
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.time-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.checkin-note {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: #f0f9ff;
+  border-left: 3px solid #0ea5e9;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Breakfast Section */
+.breakfast-card {
+  max-width: 800px;
+  margin: 1.5rem auto;
+}
+
+.breakfast-schedule {
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.breakfast-time {
+  margin: 0 0 0.25rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.breakfast-subtitle {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--color-white);
+  opacity: 0.9;
+}
+
+.breakfast-instructions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breakfast-instruction {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: #f9fafb;
+  border-radius: 4px;
+  border-left: 3px solid var(--color-primary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.breakfast-instruction:last-child {
+  margin-bottom: 0;
+}
+
+/* Rules Section */
+.rules-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Discounts Section */
+.discounts-card {
+  max-width: 800px;
+  margin: 1.5rem auto;
+}
+
+.discounts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.discounts-list li {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: #d1fae5;
+  border-left: 3px solid #10b981;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.discounts-list li:last-child {
+  margin-bottom: 0;
+}
+
+.discounts-restrictions {
+  padding: 1rem;
+  background: #fef3c7;
+  border-radius: 4px;
+  border-left: 3px solid #f59e0b;
+}
+
+.discounts-restrictions h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #78350f;
+}
+
+.discounts-restrictions ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.discounts-restrictions li {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #78350f;
+}
+
+.discounts-restrictions li:last-child {
+  margin-bottom: 0;
+}
+
+/* Section Icon */
+.section-icon {
+  margin-right: 0.75rem;
+  color: var(--color-primary);
+  vertical-align: middle;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .policies-main-title {
+    font-size: 2rem;
+  }
+
+  .policies-main-subtitle {
+    font-size: 1rem;
+  }
+
+  .checkin-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .time-item {
+    flex-direction: column;
+    gap: 0.4rem;
+    text-align: center;
+  }
+
+  .breakfast-time {
+    font-size: 1.75rem;
+  }
+
+  .breakfast-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .discounts-list li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .policies-hero {
+    padding: 2rem 0;
+  }
+
+  .policies-main-title {
+    font-size: 1.75rem;
+  }
+
+  .checkin-note {
+    font-size: 0.85rem;
+  }
+
+  .breakfast-schedule {
+    padding: 1.25rem;
+  }
+
+  .breakfast-time {
+    font-size: 1.75rem;
+  }
+
+  .breakfast-instruction {
+    font-size: 0.95rem;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .checkin-card {
+    transition: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .checkin-card,
+  .breakfast-card,
+  .discounts-card {
+    border: 2px solid currentColor;
+  }
+
+  .time-item,
+  .breakfast-instruction,
+  .discounts-list li {
+    border-width: 2px;
+  }
+}
+
+/* Menu Section */
+.menu-section {
+  margin-top: 3rem;
+}
+
+.menu-section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+}
+
+.menu-section-subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.menu-sides-beverages {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menu-extras-card {
+  background: var(--color-white);
+}
+
+.menu-extras-card .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin: 0 0 1rem 0;
+}
+
+.extras-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.extras-list li {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: var(--color-background, #f8f9fa);
+  border-radius: 6px;
+  border-left: 3px solid var(--color-primary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.extras-list li:last-child {
+  margin-bottom: 0;
+}
+
+.menu-notes {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--color-info-light, #d1ecf1);
+  border-radius: 8px;
+  border-left: 4px solid var(--color-info, #17a2b8);
+  text-align: center;
+}
+
+.menu-note {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.menu-note:first-child {
+  margin-top: 0;
+}
+
+.menu-note:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design for Menu */
+@media (max-width: 1024px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-sides-beverages {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-section-title {
+    font-size: 1.75rem;
+  }
+
+  .menu-section-subtitle {
+    font-size: 1rem;
+  }
+
+  .menu-sides-beverages {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-section-title {
+    font-size: 1.5rem;
+  }
+
+  .menu-notes {
+    padding: 1rem;
+  }
+
+  .menu-note {
+    font-size: 0.875rem;
+  }
+}
