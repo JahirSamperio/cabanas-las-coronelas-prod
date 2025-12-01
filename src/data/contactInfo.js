@@ -1,6 +1,5 @@
 export const contactInfo = {
-  phone: '+52 1 771 149 6485',
-  email: 'info@cabanaslascoronelas.com',
+  phone: '+52-1-771-149-6485',
   whatsapp: '5217711496485',
   address: {
     street: 'Carretera Huasca (atrás de la Secundaria)',
@@ -14,7 +13,7 @@ export const contactInfo = {
     lng: -98.5833
   },
   hours: {
-    checkin: '15:00',
+    checkin: '13:00',
     checkout: '12:00',
     office: 'Lunes a Domingo 8:00 - 20:00'
   },

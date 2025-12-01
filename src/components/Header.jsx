@@ -11,7 +11,13 @@ const Header = () => {
       <div className="container">
         <nav className="nav" role="navigation" aria-label="Navegación principal">
           <Link to="/" className="logo" aria-label={`${siteConfig.name} - Inicio`}>
-            <span className="logo-text">{siteConfig.name}</span>
+            <img 
+              src="/assets/logo.png" 
+              alt="Cabañas Las Coronelas - Hospedaje en Huasca de Ocampo, Hidalgo"
+              className="logo-image"
+              width="180"
+              height="60"
+            />
           </Link>
           
           <button 

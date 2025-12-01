@@ -28,12 +28,7 @@ const Footer = () => {
                   {contactInfo.phone}
                 </a>
               </p>
-              <p>
-                <strong>Email:</strong> 
-                <a href={`mailto:${contactInfo.email}`} className="contact-link">
-                  {contactInfo.email}
-                </a>
-              </p>
+
               <p>
                 <strong>WhatsApp:</strong> 
                 <a 
@@ -98,10 +93,26 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} {siteConfig.name}. Todos los derechos reservados.</p>
+          <div className="copyright">
+            <p>&copy; {new Date().getFullYear()} {siteConfig.name}. Todos los derechos reservados.</p>
+          </div>
           <div className="footer-links">
-            <a href="/privacidad" className="footer-link">Política de Privacidad</a>
-            <a href="/terminos" className="footer-link">Términos y Condiciones</a>
+            <Link to="/policies" className="footer-link">Políticas</Link>
+            <a href="/privacidad" className="footer-link">Privacidad</a>
+            <a href="/terminos" className="footer-link">Términos</a>
+          </div>
+          <div className="developer-credit">
+            <p className="dev-text">
+              Desarrollado por{' '}
+              <a 
+                href="https://portafolio-jahirsamperio.netlify.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="dev-link"
+              >
+                Jahir Alberto Samperio
+              </a>
+            </p>
           </div>
         </div>
       </div>

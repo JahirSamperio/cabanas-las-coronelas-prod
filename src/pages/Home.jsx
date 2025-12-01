@@ -55,9 +55,11 @@ const Home = () => {
         </div>
         <div className="hero-image">
           <LazyImage
-            src="https://enews.mx/foto/noticias/noticias_20210823025405_1625.jpg"
-            alt="Cabaña de madera rodeada de naturaleza al amanecer"
+            src="https://images.cabanaslascoronelas.com/images/banners/las-coronelas.webp"
+            alt="Cabañas Las Coronelas - Vista panorámica del complejo en Huasca de Ocampo"
             className="hero-bg"
+            eager={true}
+            sizes="100vw"
           />
         </div>
       </section>

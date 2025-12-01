@@ -16,11 +16,19 @@
 .logo {
   text-decoration: none;
   color: var(--primary-color);
+  display: flex;
+  align-items: center;
 }
 
-.logo-text {
-  font-size: 1.5rem;
-  font-weight: 700;
+.logo-image {
+  height: 50px;
+  width: auto;
+  max-width: 180px;
+  transition: var(--transition);
+}
+
+.logo:hover .logo-image {
+  transform: scale(1.05);
 }
 
 .nav-menu {
@@ -76,6 +84,11 @@
 }
 
 @media (max-width: 768px) {
+  .logo-image {
+    height: 40px;
+    max-width: 150px;
+  }
+
   .menu-toggle {
     display: flex;
   }

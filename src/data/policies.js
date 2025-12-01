@@ -62,18 +62,27 @@ export const policies = {
     normal: {
       checkIn: '1:00 PM',
       checkOut: '12:00 PM',
-      earlyArrival: 'Si llega antes de la 1:00 PM puede usar alberca, asadores y áreas comunes'
+      earlyArrival: 'Si llega antes de la 1:00 PM puede usar alberca, asadores y áreas comunes (llame a su asesor para información)',
+      services: {
+        firewood: 200,
+        mobileGrills: 100,
+        fixedGrills: 0
+      },
+      immediateAvailability: 'Sin reservación anticipada (al menos una noche antes), la cabaña se entrega inmediatamente solo si está disponible'
     },
     vacation: {
       checkIn: '3:00 PM',
-      checkOut: '12:00 PM'
-    }
+      checkOut: '12:00 PM',
+      immediateAvailability: 'Sin reservación anticipada (al menos una noche antes), la cabaña se entrega inmediatamente solo si está disponible'
+    },
+    checkoutNote: 'Check out a las 12:00 PM para permitir limpieza y sanitización correcta del espacio'
   },
   breakfast: {
     schedule: '9:00 AM - 11:00 AM',
     instructions: [
       'Desayuno incluido en fines de semana y días festivos',
       'Servido en el desayunador principal',
+      'Debe ingresar con el nombre de su cabaña',
       'Menú variado con opciones para toda la familia'
     ]
   },
@@ -81,9 +90,9 @@ export const policies = {
     weekday: true,
     multiNight: true,
     restrictions: [
-      'Sin reservación anticipada la cabaña se entrega inmediatamente solo si está disponible',
       'Los descuentos no aplican en temporada alta ni días festivos',
-      'Consultar disponibilidad y tarifas especiales'
+      'Consultar disponibilidad y tarifas especiales',
+      'Reservación anticipada recomendada (al menos una noche antes)'
     ]
   },
   rules: [
